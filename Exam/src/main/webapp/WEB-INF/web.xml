@@ -1,0 +1,100 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>PermissionFilter</filter-name>
+  	<display-name>PermissionFilter</display-name>
+  	<description></description>
+  	<filter-class>com.hand.filter.PermissionFilter</filter-class>
+  </filter>
+  <filter>
+  	<filter-name>PeFilter</filter-name>
+  	<filter-class>com.hand.filter.PermissionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>PermissionFilter</filter-name>
+  	<url-pattern>/PermissionFilter</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PeFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>InServlet</servlet-name>
+    <servlet-class>com.hand.servlet.InsertServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeServlet</servlet-name>
+    <servlet-class>com.hand.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomServlet</servlet-name>
+    <servlet-class>com.hand.servlet.CustomerServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>CustomerServlet</servlet-name>
+  	<display-name>CustomerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hand.servlet.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsertServlet</servlet-name>
+  	<display-name>InsertServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hand.servlet.InsertServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<display-name>DeleteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hand.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<display-name>LogoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hand.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoServlet</servlet-name>
+  	<servlet-class>com.hand.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerServlet</servlet-name>
+  	<url-pattern>/CustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertServlet</servlet-name>
+  	<url-pattern>/InsertServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+   
+   <servlet-mapping>
+    <servlet-name>InServlet</servlet-name>
+    <url-pattern>/InServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>DeServlet</servlet-name>
+    <url-pattern>/DeServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>CustomServlet</servlet-name>
+    <url-pattern>/CustomServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>LogoutServlet</servlet-name>
+   	<url-pattern>/LogoutServlet</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>LoServlet</servlet-name>
+   	<url-pattern>/LoServlet</url-pattern>
+   </servlet-mapping>
+</web-app>
