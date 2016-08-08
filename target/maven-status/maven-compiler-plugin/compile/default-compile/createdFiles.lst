@@ -1,0 +1,15 @@
+com\hand\dao\customerimpl\CustomerImpl.class
+com\hand\servlet\LogoutServlet.class
+com\hand\bean\CustomerBean.class
+com\hand\servlet\DeleteServlet.class
+com\hand\dao\Customer$AddressDao.class
+com\hand\dao\filmimpl\FilmImpl.class
+com\hand\service\Test.class
+com\hand\connection\ConnectionFactory.class
+com\hand\servlet\InsertServlet.class
+com\hand\filter\PermissionFilter.class
+com\hand\service\CheckService.class
+com\hand\bean\FilmBean.class
+com\hand\dao\Customer.class
+com\hand\dao\Film.class
+com\hand\servlet\CustomerServlet.class
